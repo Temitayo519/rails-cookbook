@@ -1,4 +1,4 @@
-<div class="banner" style="background-image: url('<%= image_path "breakfast img.jpeg" %>')">
+<div class="banner" style="background-image: url('<%= cl_image_path @category.photo.key, crop: :fill %>')">
   <div>
     <h1><%= @category.name %></h1>
   </div>

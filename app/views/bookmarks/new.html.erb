@@ -3,6 +3,7 @@
   <%= simple_form_for([@category, @bookmark]) do |f| %>
     <%= f.input :comment %>
     <%= f.association :recipe %>
+    <%= f.input :photo, as: :file %>
     <%= f.submit class:'btn btn-warning' %>
   <% end %>
 </div>
